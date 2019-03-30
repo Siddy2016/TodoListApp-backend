@@ -1,0 +1,121 @@
+[
+  {
+    "type": "emit",
+    "url": "/set-user",
+    "title": "Setting user online",
+    "version": "0.0.1",
+    "group": "Emit",
+    "description": "<p>This event <b>(&quot;set-user&quot;)</b> has to be emitted when a user comes online.</p>",
+    "examples": [
+      {
+        "title": "The following data has to be emitted",
+        "content": "{\n    userId :string,\n    fullName: string\n}",
+        "type": "json"
+      }
+    ],
+    "filename": "libraries/socketlib.js",
+    "groupTitle": "Emit",
+    "name": "EmitSetUser"
+  },
+  {
+    "type": "listen",
+    "url": "/verifyUser",
+    "title": "Verification the init user",
+    "version": "0.0.1",
+    "group": "Listen",
+    "description": "<p>This event <b>(&quot;verify-user&quot;)</b> has to be listened on the user's end to verify user</p>",
+    "filename": "libraries/socketlib.js",
+    "groupTitle": "Listen",
+    "name": "ListenVerifyuser"
+  },
+  {
+    "type": "emit",
+    "url": "/createRequest",
+    "title": "Create New Task",
+    "version": "0.0.1",
+    "group": "Task_Emit",
+    "description": "<p>This event <b>(&quot;createRequest&quot;)</b> has to be emitted when a user create the task</p>",
+    "examples": [
+      {
+        "title": "The following data has to be emitted",
+        "content": "{\n                            Id: string,\n                            sender_id: string,\n                            receiver_id: string,\n                            message: string,\n                            category: string\n                        }",
+        "type": "json"
+      }
+    ],
+    "filename": "libraries/socketlib.js",
+    "groupTitle": "Task_Emit",
+    "name": "EmitCreaterequest"
+  },
+  {
+    "type": "emit",
+    "url": "/deleteRequest",
+    "title": "Deleted the task",
+    "version": "0.0.1",
+    "group": "Task_Emit",
+    "description": "<p>This event <b>(&quot;deleteRequest&quot;)</b> has to be emitted when a user delete the task</p>",
+    "examples": [
+      {
+        "title": "The following data has to be emitted",
+        "content": "{\n                            Id: string,\n                            sender_id: string,\n                            receiver_id: string,\n                            message: string,\n                            category: string\n                        }",
+        "type": "json"
+      }
+    ],
+    "filename": "libraries/socketlib.js",
+    "groupTitle": "Task_Emit",
+    "name": "EmitDeleterequest"
+  },
+  {
+    "type": "emit",
+    "url": "/acceptRequest",
+    "title": "Accept the friend",
+    "version": "0.0.1",
+    "group": "friend_Emit",
+    "description": "<p>This event <b>(&quot;acceptRequest&quot;)</b> has to be emitted when a user accepted the request</p>",
+    "examples": [
+      {
+        "title": "The following data has to be emitted",
+        "content": "{\n                            Id: string,\n                            sender_id: string,\n                            receiver_id: string,\n                            message: string,\n                            category: string\n                        }",
+        "type": "json"
+      }
+    ],
+    "filename": "libraries/socketlib.js",
+    "groupTitle": "friend_Emit",
+    "name": "EmitAcceptrequest"
+  },
+  {
+    "type": "emit",
+    "url": "/receivedRequest",
+    "title": "get friend request msg",
+    "version": "0.0.1",
+    "group": "friend_Emit",
+    "description": "<p>This event <b>(&quot;receivedRequest&quot;)</b> has to be emitted when a user received any request</p>",
+    "examples": [
+      {
+        "title": "The following data has to be emitted",
+        "content": "{\n                            Id: string,\n                            sender_id: string,\n                            receiver_id: string,\n                            message: string,\n                            category: string\n                        }",
+        "type": "json"
+      }
+    ],
+    "filename": "libraries/socketlib.js",
+    "groupTitle": "friend_Emit",
+    "name": "EmitReceivedrequest"
+  },
+  {
+    "type": "emit",
+    "url": "/rejectRequest",
+    "title": "Reject the friend request",
+    "version": "0.0.1",
+    "group": "friend_Emit",
+    "description": "<p>This event <b>(&quot;rejectRequest&quot;)</b> has to be emitted when a user rejected the request</p>",
+    "examples": [
+      {
+        "title": "The following data has to be emitted",
+        "content": "{\n                            Id: string,\n                            sender_id: string,\n                            receiver_id: string,\n                            message: string,\n                            category: string\n                        }",
+        "type": "json"
+      }
+    ],
+    "filename": "libraries/socketlib.js",
+    "groupTitle": "friend_Emit",
+    "name": "EmitRejectrequest"
+  }
+]
